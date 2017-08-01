@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `mi153_customer_satisfaction_nbcaasi`.`QUALITY_ASSURANCE` (
+  `QA_ID` VARCHAR(45) NOT NULL,
+  `QA_NUMBER` INT NULL,
+  `QA_NAME` VARCHAR(45) NULL,
+  PRIMARY KEY (`QA_ID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mi153_customer_satisfaction_nbcaasi`.`GENERAL_MANAGER`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mi153_customer_satisfaction_nbcaasi`.`GENERAL_MANAGER` (
+  `MNGR_ID` INT NOT NULL AUTO_INCREMENT,
+  `MNGR_NUMBER` INT NULL,
+  `MNGR_NAME` VARCHAR(45) NULL,
+  PRIMARY KEY (`MNGR_ID`))
+ENGINE = InnoDB;
