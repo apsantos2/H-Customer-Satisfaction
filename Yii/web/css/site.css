@@ -1,0 +1,414 @@
+html,
+body {
+    height: 100%;
+	background-image: url('../img/bg.jpg');
+	background-repeat:no-repeat; 
+	background-position:top center; 
+	background-size:120%; 
+	margin:0; 
+	padding:0;
+}
+
+.site-login {
+	color: white;
+}
+
+.large-header {
+	position: relative;
+	width: 100%;
+	margin-left: -150px;
+	background-size: cover;
+	background-position: center center;
+	z-index: 2;
+}
+
+#demo-canvas {
+	margin-top: -100px;
+}
+#tabs {
+	display: none;
+}
+
+th {
+	text-align:center;
+	padding-top: 4px;
+}
+
+#trivia {
+	display: none;
+}
+
+#guest {
+	display: none;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-circle:hover {
+	opacity: 0.7;
+}
+
+.guestform-index {
+	color: black;
+}
+
+.guestform-index a {
+	color: black;
+}
+
+.guestform-index a:hover {
+	color: red;
+}
+
+.guestform-index table {
+	background-color: grey;
+}
+
+.guestform-create {
+	color: white;
+}
+
+.guestform-view {
+	color: black;
+}
+
+.guestform-view a {
+	color: white;
+}
+
+.guestform-view a:hover {
+	color: red;
+}
+
+
+.guestform-view table {
+	background-color: grey;
+}
+
+h1 {
+	color: white;
+}
+
+
+.guestform-update {
+	color: white;
+}
+
+#guest table {
+	background-color: grey;
+}
+
+.trivia-index {
+	color: black;
+}
+
+.trivia-index table {
+	background-color: grey;
+}
+
+.trivia-index a {
+	color: black;
+}
+
+.trivia-index a:hover {
+	color: red;
+}
+
+.trivia-view {
+	color: black;
+}
+
+.trivia-view table {
+	background-color: grey;
+}
+
+.box
+{
+    width: auto;
+    padding: 40px;
+    margin: 30px;
+	border: 4px solid #FFFFFF;
+	box-shadow: 10px 10px 10px #000000;
+}
+.points {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.main-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.about-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	top: 50%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.view-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 30%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.trivia-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 30%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.triviac-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	color: white;
+}
+
+.triviav-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.triviau-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 20%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	color: white;
+}
+
+.update-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 40%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.upadate-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 25%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.create-title {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	top: 45%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.login-title {
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.contact-title {
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: 150px;
+	color: white;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.guest-title {
+	width: 100%;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	margin-left: 150px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
