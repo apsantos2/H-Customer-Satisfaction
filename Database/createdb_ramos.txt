@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `mi153_customer_satisfaction_mgramos`.`DEPARTMENT` (
+CREATE TABLE IF NOT EXISTS `mi153_customer_satisfaction_monitoring_system_mgramos`.`DEPARTMENT` (
   `Dept_id` INT NOT NULL,
   `Dept_Name` VARCHAR(45) NULL,
   `Dept_HeadName` VARCHAR(45) NULL,
