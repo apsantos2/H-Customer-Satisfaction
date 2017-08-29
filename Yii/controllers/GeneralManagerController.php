@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Trivia;
-use yii\data\ActiveDataProvider;
+use app\models\GeneralManager;
+use app\models\GeneralManagerSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * TriviaController implements the CRUD actions for Trivia model.
+ * GeneralManagerController implements the CRUD actions for GeneralManager model.
  */
-class TriviaController extends Controller
+class GeneralManagerController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,22 +30,22 @@ class TriviaController extends Controller
     }
 
     /**
-     * Lists all Trivia models.
+     * Lists all GeneralManager models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Trivia::find(),
-        ]);
+        $searchModel = new GeneralManagerSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Trivia model.
+     * Displays a single GeneralManager model.
      * @param integer $id
      * @return mixed
      */
@@ -57,16 +57,16 @@ class TriviaController extends Controller
     }
 
     /**
-     * Creates a new Trivia model.
+     * Creates a new GeneralManager model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Trivia();
+        $model = new GeneralManager();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->ID]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -75,7 +75,7 @@ class TriviaController extends Controller
     }
 
     /**
-     * Updates an existing Trivia model.
+     * Updates an existing GeneralManager model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -85,7 +85,7 @@ class TriviaController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->ID]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -94,7 +94,7 @@ class TriviaController extends Controller
     }
 
     /**
-     * Deletes an existing Trivia model.
+     * Deletes an existing GeneralManager model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class TriviaController extends Controller
     }
 
     /**
-     * Finds the Trivia model based on its primary key value.
+     * Finds the GeneralManager model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Trivia the loaded model
+     * @return GeneralManager the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Trivia::findOne($id)) !== null) {
+        if (($model = GeneralManager::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

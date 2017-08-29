@@ -5,13 +5,10 @@ namespace app\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
+use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\Trivia;
-use yii\db\Expression;
-use app\models\Guestform;
-use yii\data\ActiveDataProvider;
 
 class SiteController extends Controller
 {
@@ -64,25 +61,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-		$query = Trivia::find()
-		->orderBy(new Expression('rand()'))
-		->limit(5)
-		->all();
-		
-		$dataProvider = new ActiveDataProvider([
-            'query' => Guestform::find(),
-        ]);
-		
-        return $this->render('index', [
-			'dataProvider' => $dataProvider,
-			'trivia' => $query,
-        ]);
+        return $this->render('index');
     }
 
     /**
      * Login action.
      *
-     * @return string
+     * @return Response|string
      */
     public function actionLogin()
     {
@@ -97,12 +82,16 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+
+        if (!Yii::$app->user->isAdmin) {
+            return $this->goHome();
+        }
     }
 
     /**
      * Logout action.
      *
-     * @return string
+     * @return Response
      */
     public function actionLogout()
     {
@@ -114,7 +103,7 @@ class SiteController extends Controller
     /**
      * Displays contact page.
      *
-     * @return string
+     * @return Response|string
      */
     public function actionContact()
     {

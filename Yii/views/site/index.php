@@ -1,110 +1,67 @@
 <?php
 
-use yii\helpers\Html;
-use yii\grid\GridView;
-use yii\widgets\Pjax;
-
 /* @var $this yii\web\View */
 
-$this->title = 'Home Page';
+$this->title = 'Taal Vista Hotel';
 ?>
-<script>
-var divs = ["tabs","trivia","guest"];
-var visibleDivId = null;
 
-function toggleVisibility(divId) {
-    if (visibleDivId === divId) {
-        visibleDivId = null;
-    } else {
-        visibleDivId = divId;
-    }
-    hideNonVisibleDivs();
-}
+<link rel="stylesheet" type="text/css" href="site.css">
 
-function hideNonVisibleDivs() {
-    var i, divId, div;
-    for (i = 0; i < divs.length; i++) {
-        divId = divs[i];
-        div = document.getElementById(divId);
-        if (visibleDivId === divId) {
-            div.style.display = "block";
-        } else {
-            div.style.display = "none";
-        }
-    }
-}
-</script>
+<div class="site-index">
+
+  <div class="main">
+ </br>
+   
+    </div>
+
+     <div class="body-content">
+        <div class="slideshow-container">
+
+  <div class="mySlides">
+    <img src="https://s2.postimg.org/5k8esf52x/taal.jpg" style="width:1000px;height:500px;"> 
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="body-content">
 
 
-</table>
-</div>
-</div>
-				<div id="trivia">
-					<div class="box">
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-					<script>
-						$(document).ready(function()
-						{
-							$("#show").click(function(){
-							$("answers").toggle(500);
-						});
-						});
-					</script>
-<p>
-        <?php
-			if (Yii::$app->user->isGuest) {
-				
-			} elseif(Yii::$app->user->identity->username) {
-				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=trivia" class="btn btn-lg btn-success">ADD TRIVIA</a>';
-			}
-			?>
-    </p>
-					<h1>Trivias</h1>
+            <div class="paneSection">
+            <div class="about">
+                <h1 style="text-align:center;">Customer Satisfaction Monitoring System </h1>
+
+                    <p style="text-indent:50px, text-align: justify; ">Customer feedback is a marketing term that describes the process of obtaining a customer’s opinion
+					about a business, product or service. Customer Satisfaction Monitoring System will gather customer satisfaction feedback from Taal Vista Hotel guests. 
+					One of the goals of the proposed system is to analyze customer satisfaction feedback. 
+					Using rating-based questions when measuring customer satisfaction will help track and monitor
+					how satisfied customers are over time especially with frequent guests.</p>
 					
-					<?php foreach ($trivia as $trivia): ?>
-								<strong><?= Html::encode("{$trivia->QUESTION}") ?>:</strong>
-							<br></br>	
-								<answers style=display:none><?= $trivia->ANSWER ?></answers>
-							<br></br>		
-					<?php endforeach; ?>
-					<p><a class="btn btn-lg btn-success" id="show">SHOW / HIDE</a></p>
-					</div>
-				</div>
-				
-				<div id="guest">
-					<div class="box">
-						<p>
-        <?php
-			if (Yii::$app->user->isGuest) {
-				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest%2Fcreate" class="btn btn-lg btn-success">ADD DATA</a>';
-			} elseif(Yii::$app->user->identity->username) {
-				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest%2Fcreate" class="btn btn-lg btn-success">ADD DATA</a>';
-				echo '<a href="http://127.0.0.1/exercise7/web/index.php?r=guest" class="btn btn-lg btn-success" style="margin-left: 10px;">EDIT DATA</a>';
-			}
-			?>
-    </p>
-						<div class="guestform-index">
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'user_id',
-            'complete_name',
-            'nickname',
-            'Email_Address:email',
-            'Home_Address',
-            'gender',
-            'cellphone',
-            'comment',
-        ],
-    ]); ?>
-</div>
-					</div>
-				</div>
-				
-				</div>
-			</div>
-</div>
-</div>
-
+      
+    </div>
+ </div>
+ 
+ <div class="paneSection">
+                <h1 style="text-align:center;">Things you experience with us today!</h1>
+<div class="row">
+                <div class= "col-md-6">
+             <img src="https://s26.postimg.org/roh59oq21/Deluxe-_King--_Room-_Lake-_Wing-.png" style="width:500px;height:320px;"></a>
+                
+             <h2 style="text-align:center;"> Deluxe Room </h2> 
+</br>
+            <p> Situated in the colder areas of the country, this hotel in Tagaytay is a good place to have a soothing break from the heat of the cities. 
+			Complete with the necessities for an absolute stay, an accommodation at Taal Vista Hotel creates satisfying memories and experiences
+			even for the discerning guests.  </p>

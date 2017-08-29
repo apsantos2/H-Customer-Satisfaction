@@ -7,30 +7,35 @@ use yii\helpers\Html;
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-<div id="large-header" class="large-header">
-    <canvas id="demo1-canvas"></canvas>
-			<div class="points">
-				<canvas id="demo-canvas"></canvas>
-			</div>
-				<div class="about-title">
-				<div class="box">
-					
-						<h2>TERMS AND CONDITIONS</h2>
-						<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						</ul>
-						
-				</div>
-				</div>
-</div>
 
-</div>
+<br>
+<div class="site-about">
+    <div class="body-content">
+    <br>
+
+        <div class="slideshow-container">
+
+  <div class="mySlides">
+    <img src="https://s26.postimg.org/u4slye3u1/facade-mobile-bg.jpg" style="width:1000px;height:500px"> 
+  </div>
+
+  
+ 
+
+ 
+ 
+ 
+ 
+ 
+  <h1 style="text-align:center"><?= Html::encode($this->title) ?></h1>
+
+
+    <p style="text-align:center">
+
+    	<br>
+        Located an hour away from the hustle and bustle of Manila, Taal Vista Hotel offers accommodation in Tagaytay City. 
+    	</br>
+    	Built in 1939, the English Tudor-styled mansion Hotel has become part of the Filipino heritage. 
+    	</br>
+    	It features an outdoor swimming pool and guests can enjoy meals from 3 dining options or have a drink at the bar. Free WiFi is available throughout the property.
+    	<br>
