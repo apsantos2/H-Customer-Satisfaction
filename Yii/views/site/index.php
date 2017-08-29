@@ -53,3 +53,15 @@ $this->title = 'Taal Vista Hotel';
       
     </div>
  </div>
+ 
+ <div class="paneSection">
+                <h1 style="text-align:center;">Things you experience with us today!</h1>
+<div class="row">
+                <div class= "col-md-6">
+             <img src="https://s26.postimg.org/roh59oq21/Deluxe-_King--_Room-_Lake-_Wing-.png" style="width:500px;height:320px;"></a>
+                
+             <h2 style="text-align:center;"> Deluxe Room </h2> 
+</br>
+            <p> Situated in the colder areas of the country, this hotel in Tagaytay is a good place to have a soothing break from the heat of the cities. 
+			Complete with the necessities for an absolute stay, an accommodation at Taal Vista Hotel creates satisfying memories and experiences
+			even for the discerning guests.  </p>
