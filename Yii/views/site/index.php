@@ -65,3 +65,6 @@ $this->title = 'Taal Vista Hotel';
             <p> Situated in the colder areas of the country, this hotel in Tagaytay is a good place to have a soothing break from the heat of the cities. 
 			Complete with the necessities for an absolute stay, an accommodation at Taal Vista Hotel creates satisfying memories and experiences
 			even for the discerning guests.  </p>
+			
+			<tr class="odd"><th class="title"><input type="hidden" name="frontdesk" value="1"> Guest amenities and supplies quality: </th> 
+			<th class="h">Excellent</th> 
