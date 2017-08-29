@@ -68,3 +68,5 @@ $this->title = 'Taal Vista Hotel';
 			
 			<tr class="odd"><th class="title"><input type="hidden" name="frontdesk" value="1"> Guest amenities and supplies quality: </th> 
 			<th class="h">Excellent</th> 
+			<input type="radio" name="frontdesk_check_in_out_efficiency" id="frontdesk_check_in_out_efficiency_5" value="5" class="validate[optional,length[0,128]] odd ">
+			<th class="h">Good</th> 
