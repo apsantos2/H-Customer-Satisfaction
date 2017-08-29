@@ -7,22 +7,22 @@ use yii\helpers\Html;
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<br>
 <div class="site-about">
-<div id="large-header" class="large-header">
-    <canvas id="demo1-canvas"></canvas>
-			<div class="points">
-				<canvas id="demo-canvas"></canvas>
-			</div>
-				<div class="about-title">
-				<div class="box">
-					
-						<h2>TERMS AND CONDITIONS</h2>
-						<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+    <div class="body-content">
+    <br>
+
+        <div class="slideshow-container">
+
+  <div class="mySlides">
+    <img src="https://s26.postimg.org/u4slye3u1/facade-mobile-bg.jpg" style="width:1000px;height:500px"> 
+  </div>
+
+  
+ 
+</div>
+<br>
 						<li></li>
 						<li></li>
 						<li></li>
