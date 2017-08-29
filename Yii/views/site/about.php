@@ -21,16 +21,21 @@ $this->params['breadcrumbs'][] = $this->title;
 
   
  
-</div>
-<br>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						</ul>
-						
-				</div>
-				</div>
-</div>
 
-</div>
+ 
+ 
+ 
+ 
+ 
+  <h1 style="text-align:center"><?= Html::encode($this->title) ?></h1>
+
+
+    <p style="text-align:center">
+
+    	<br>
+        Located an hour away from the hustle and bustle of Manila, Taal Vista Hotel offers accommodation in Tagaytay City. 
+    	</br>
+    	Built in 1939, the English Tudor-styled mansion Hotel has become part of the Filipino heritage. 
+    	</br>
+    	It features an outdoor swimming pool and guests can enjoy meals from 3 dining options or have a drink at the bar. Free WiFi is available throughout the property.
+    	<br>
