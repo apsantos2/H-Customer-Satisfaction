@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS `mi153_customer_satisfaction_nbcaasi`.`QUALITY_ASSURA
   PRIMARY KEY (`QA_ID`))
 ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `mi153_customer_satisfaction_nbcaasi`.`GENERAL_MANAGER`
 -- -----------------------------------------------------
