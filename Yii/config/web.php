@@ -38,7 +38,9 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
+        /*
+        'urlManager' => [
+            'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
@@ -53,11 +55,8 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
-    ];
-
-    $config['bootstrap'][] = 'gii';
-    $config['modules']['gii'] = [
-        'class' => 'yii\gii\Module',
+        // uncomment the following to add your IP if you are not connecting from localhost.
+        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 
