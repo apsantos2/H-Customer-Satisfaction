@@ -61,15 +61,31 @@ AppAsset::register($this);
         ],
     ]);
         ]) ?>
+         NavBar::end();
+    ?> 
+
+    <div class="container">
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
         <?= $content ?>
     </div>
 </div>
 
 <footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+    <div class="container1">
+        <p class="pull-left">&copy; Taal Vista Hotel <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+ <a href="https://www.facebook.com/taalvistahotel/">
+ <img src="https://s2.postimg.org/e2d9j0m7t/facebook.png"  width="45" height="45" align="left"></a>
+
+ <a href="https://twitter.com/taalvistahotel?lang=en">
+ <img src="https://s2.postimg.org/fjypukqyh/twitter.png" width="45" height="45" align="left"></a>
+
+<a href="https://t.co/xekMSKvuHk">
+ <img src="https://s2.postimg.org/5vl9rfw55/instagram_icon.pngss" width="45" height="45" align="left"></a>
+       
+
     </div>
 </footer>
 
