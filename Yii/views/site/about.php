@@ -69,3 +69,4 @@ $this->params['breadcrumbs'][] = $this->title;
     	<br>
     	While at Taza Fresh Table, enjoy laid-back dining with garden-to-table vegetables, handmade pasta and sauces, and meats smoked right in the kitchen. 
     </p>
+	
