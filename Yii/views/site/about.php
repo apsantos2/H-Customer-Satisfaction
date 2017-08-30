@@ -47,3 +47,14 @@ $this->params['breadcrumbs'][] = $this->title;
     	</br>
  
     </p>
+	
+	
+	<p style="text-align:center">
+    	<br>
+    	Guests can approach the 24-hour front desk for currency exchange,
+    	</br>
+    	luggage storage and concierge services. 
+    	<br>
+    	A games room is available for guests who wish to stay indoors. Alternatively,  
+    	</br>
+   		guests can indulge in massage treatments at the in-house spa.
