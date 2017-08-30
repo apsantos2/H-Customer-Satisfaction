@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
  
  
  
-  <h1 style="text-align:center"><?= Html::encode($this->title) ?></h1>
+ <h1 style="text-align:center"><?= Html::encode($this->title) ?></h1>
 
 
     <p style="text-align:center">
@@ -39,3 +39,11 @@ $this->params['breadcrumbs'][] = $this->title;
     	</br>
     	It features an outdoor swimming pool and guests can enjoy meals from 3 dining options or have a drink at the bar. Free WiFi is available throughout the property.
     	<br>
+    	The property is a 5-minute walk away from PAGCOR Casino, and a 10-minute drive from Picnic Grove.
+    	</br>
+    	The hotel has stylishly appointed rooms that are all individually air conditioned,
+    	<br>
+    	and are fully-equipped with modern amenities such as premium bedding, LED cable TV, a fully stocked mini-bar and complimentary WiFi internet access.
+    	</br>
+ 
+    </p>
