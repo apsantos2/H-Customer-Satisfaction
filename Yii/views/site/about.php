@@ -58,3 +58,14 @@ $this->params['breadcrumbs'][] = $this->title;
     	A games room is available for guests who wish to stay indoors. Alternatively,  
     	</br>
    		guests can indulge in massage treatments at the in-house spa.
+		
+		</p>
+
+    <p style="text-align:center">
+    	<br>
+    	Café Veranda serves up authentic local dishes, as well as a variety of international food items. 
+    	</br>
+    	Alternatively, guests can feast on the weekend lunch buffet featuring the Hotel’s heritage cuisine, a collection of Filipino favourites with a twist.
+    	<br>
+    	While at Taza Fresh Table, enjoy laid-back dining with garden-to-table vegetables, handmade pasta and sauces, and meats smoked right in the kitchen. 
+    </p>
