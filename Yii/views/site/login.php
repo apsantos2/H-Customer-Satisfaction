@@ -10,12 +10,12 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div id="large-header" class="large-header">
-    <canvas id="demo1-canvas"></canvas>
-			<div class="points">
-				<canvas id="demo-canvas"></canvas>
-			</div>
-				<div class="login-title">
+<div class="site-login">
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>Please fill out the following fields to login:</p>
+	
+	
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
